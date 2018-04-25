@@ -60,13 +60,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6C09BB02FB80AD2E38FB8730 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6C09BB02FB80AD2E38FB8730 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B21EBC37389FA927D839CD20 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B21EBC37389FA927D839CD20 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B7EEBE1D77E8AA87580C68FF /* Pods_GBZToolsKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBZToolsKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C766DED2C6D2118777B227 /* Pods-GBZToolsKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBZToolsKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GBZToolsKit_Example/Pods-GBZToolsKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D9DADA83159BB80CA241D37C /* GBZToolsKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GBZToolsKit.podspec; path = ../GBZToolsKit.podspec; sourceTree = "<group>"; };
+		D9DADA83159BB80CA241D37C /* GBZToolsKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GBZToolsKit.podspec; path = ../GBZToolsKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = MRGBB;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = M66668F2X3;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -302,10 +305,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GBZToolsKit_Example/Pods-GBZToolsKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GBZToolsKit/GBZToolsKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GBZToolsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -485,6 +490,7 @@
 			baseConfigurationReference = C5C766DED2C6D2118777B227 /* Pods-GBZToolsKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M66668F2X3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBZToolsKit/GBZToolsKit-Prefix.pch";
 				INFOPLIST_FILE = "GBZToolsKit/GBZToolsKit-Info.plist";
@@ -500,6 +506,7 @@
 			baseConfigurationReference = 2DFCB1141CF067635B9A118E /* Pods-GBZToolsKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M66668F2X3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBZToolsKit/GBZToolsKit-Prefix.pch";
 				INFOPLIST_FILE = "GBZToolsKit/GBZToolsKit-Info.plist";

@@ -1,0 +1,27 @@
+{
+  "name": "GBZToolsKit",
+  "version": "0.1.0",
+  "summary": "A short description of GBZToolsKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/MRGBB/GBZToolsKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "MRGBB": "guobb@pifubao.com"
+  },
+  "source": {
+    "git": "https://github.com/MRGBB/GBZToolsKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GBZToolsKit/Classes/**/*",
+  "dependencies": {
+    "MBProgressHUD": [
+
+    ]
+  }
+}
